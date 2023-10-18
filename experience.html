@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/footerStyle.css">
+    <link rel="stylesheet" href="./css/commonStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    .card {
+        background: #f4f4f4;
+        border: 0px;
+        height: 100%;
+        box-shadow: 5px 5px 5px 5px #e4dede;
+    }
+    
+    .card-img-top {
+        transform: translate(20%, -50%);
+        height: 65px;
+        width: 78px;
+        border-radius: 50%;
+        background: #D5C455;
+    }
+    
+    .myicon {
+        font-size: 40px;
+        transform: translate(30%, 30%);
+        color: white;
+    }
+    
+    .year {
+        color: #D5C455;
+        font-weight: bold;
+    }
+    
+    .main {
+        animation: fadeIn-moveUp 1s ease-in;
+    }
+    
+    @keyframes fadeIn-moveUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        0% {
+            transform: translateY(50%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">My Portfolio</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-4">
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="index" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="about" href="./about.html">About</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="services" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="experience" href="./experience.html">Experience</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="contact" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-body mt-3">
+
+        <div class="links text-right">
+            <a href="./index.html" class="link">Home <span style="font-size: 20px;">></span></a>
+            <span class="mr-3">Experience</span>
+        </div>
+
+        <div class="heading text-center mt-3">
+            <h1>Education</h1>
+        </div>
+
+        <div class="container" id="horizontal-row">
+            <hr style=" border-top: 2px solid #e4dede;">
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <i class="fa fa-graduation-cap text-white myicon"></i>
+                            </div>
+                            <div class="card-body pt-0 pb-1">
+                                <div class="heading">
+                                    <span class="year">2018 – 2022</span>
+                                    <h3 class="degree">BS SOFTWARE ENGINEERING</h3>
+                                    <span class="location text-secondary" style="font-size: 14px; font-weight: bold;"> 
+                                    <i class="fa fa-map-marker" style="color: #D5C455;"></i> 
+                                    GIFT University
+                                </span>
+                                </div>
+                                <div class="content mt-2 mb-0">
+                                    <p><strong>CGPA:</strong> 3.91<br> <strong>Major: </strong> Computer Science <br> A Got Second Position in Speed Programing Contest. Elected as IT Specialist in HULP Prize Society of GIFT University.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <i class="fa fa-graduation-cap text-white myicon"></i>
+                            </div>
+                            <div class="card-body pt-0 pb-1">
+                                <div class="heading">
+                                    <span class="year">2016 – 2018</span>
+                                    <h3 class="degree">INTERMEDIATE IN Computer Science </h3>
+                                    <span class="location text-secondary" style="font-size: 14px; font-weight: bold;"> 
+                                    <i class="fa fa-map-marker" style="color: #D5C455;"></i> 
+                                    GOVT. Islamia College
+                                </span>
+                                </div>
+                                <div class="content mt-2 mb-0">
+                                    <p><strong>Percentage:</strong> 85%<br> <strong>Major: </strong> Computer Science, Math, Physics <br> A Got First Position in College. Voluntarily Participate in Rescue 1122 Team Internship.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="heading text-center mt-5">
+                <h1>Work Experience</h1>
+            </div>
+    
+            <div class="container" id="horizontal-row">
+                <hr style="border-top: 2px solid #e4dede;">
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <i class="fa fa-laptop myicon" style="transform: translate(40%, 30%);"></i>
+                        </div>
+                        <div class="card-body pt-0 pb-1">
+                            <div class="heading">
+                                <span class="year">2020 – 2021</span>
+                                <h3 class="degree">NEXT STEP TECH SOLUTION</h3>
+                                <span class="location text-secondary" style="font-size: 14px; font-weight: bold;">
+                                    <i class="fa fa-map-marker" style="color: #D5C455;"></i>
+                                    Awan Chowk
+                                </span>
+                            </div>
+                            <div class="content mt-2 mb-0">
+                                <p>
+                                    • Worked as an Internee and was the head of Developer team.
+                                    • Mostly worked in PHP Core and Wordpress.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <i class="fa fa-laptop myicon" style="transform: translate(40%, 30%);"></i>
+                        </div>
+                        <div class="card-body pt-0 pb-1">
+                            <div class="heading">
+                                <span class="year">2020 – 2021</span>
+                                <h3 class="degree">SOFTSCHACK SOFTWARE COMPANY</h3>
+                                <span class="location text-secondary" style="font-size: 14px; font-weight: bold;">
+                                    <i class="fa fa-map-marker" style="color: #D5C455;"></i>
+                                    Garden Town Gujranwala
+                                </span>
+                            </div>
+                            <div class="content mt-2 mb-0">
+                                <p>
+                                   Ecommerce App with Machine Learning Models
+                                   * Visual Search                  * Recommender System
+                                   * voice Search implementation    * Inventory Management
+                                   * Payment Method Integration     * Best Pair OutFit Generating
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br><br>
+     
+    </div>
+    <script src="./js/footer.js"></script>
+
+    <script src="./js/active_page.js"></script>
+
+    <script>
+        var target = document.querySelector('.second-section');
+        target.style.visibility = 'hidden';
+
+        function checkScroll() {
+            if (window.scrollY >= target.getBoundingClientRect().top) {
+                // runfliper();
+                console.log('I have been reached');
+                target.style.visibility = 'visible';
+
+                target.classList.add('main');
+                document.removeEventListener('scroll', checkScroll);
+            }
+        }
+        document.addEventListener('scroll', checkScroll)
+    </script>
+
+
+
+</body>
+
+</html>

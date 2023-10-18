@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Services - Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <link rel="stylesheet" href="commonStyle.css">
+
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .card {
+        background: rgb(255, 255, 255);
+        border: none;
+        box-shadow: 5px 5px 5px 5px #e4dede;
+        transition: .3s ease-in-out;
+        height: 100%;
+        animation: move-upward 1s ease-in-out;
+    }
+    
+    .card:hover {
+        background: rgb(23, 44, 60);
+        color: white;
+        transition: .3s ease-in-out;
+    }
+    
+    .card-image {
+        height: 100px;
+        /* border: 1px solid black; */
+        width: 100%;
+        /* transform: translate(50%); */
+    }
+    
+    .image {
+        margin-top: 7%;
+        height: 80%;
+        width: 50%;
+        transform: translate(50%);
+    }
+    
+    img {
+        height: 100%;
+        /* border: 1px solid yellow; */
+        color: white;
+    }
+    
+    .price {
+        font-size: 50px;
+        margin-top: 25px;
+        color: #D5C455;
+    }
+    
+    .dol {
+        font-size: 23px;
+        padding-top: -25px;
+    }
+    
+    .tick {
+        color: greenyellow;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .flip {
+        visibility: hidden;
+    }
+    
+    .flip-rotate {
+        animation: flip-with-rotate 2s;
+    }
+    
+    @keyframes flip-with-rotate {
+        0% {
+            transform: perspective(800px) rotateY(180deg);
+        }
+        100% {
+            transform: perspective(800px) rotateY(0);
+        }
+    }
+    
+    @keyframes move-upward {
+        0% {
+            transform: translateY(50%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">My Portfolio</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-4">
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="index" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="about" href="./about.html">About</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="services" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="experience" href="./experience.html">Experience</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" id="contact" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="body mt-3">
+        <div class="links text-right">
+            <a href="./index.html" class="link">Home <span style="font-size: 20px;">></span></a>
+            <span class="mr-3">Services</span>
+        </div>
+
+        <div class="heading text-center mt-3">
+            <h1>What I Do?</h1>
+        </div>
+
+        <div class="container" id="horizontal-row">
+            <hr style="border-top: 2px solid #e4dede;">
+        </div>
+
+        <div class="container col-md-10 mt-5 mb-5">
+            <div class="row pl-5 pr-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="web-devel.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Web Development</h4>
+                            <p class="card-text">With a strong web development background, I offer services tailored to your online needs. Expertise in WordPress, HTML, CSS, and PHP enables me to craft engaging and responsive websites. Whether it's custom WordPress themes, elegant HTML/CSS layouts, or dynamic PHP applications, I'm dedicated to reflecting your brand identity and achieving your objectives. Let's turn your web ideas into a memorable online presence.
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary">
+                                <a href="#b" class="text-white"> Check Price </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="web-des.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Web Design</h4>
+                            <p class="card-text">Armed with a wealth of web design experience, I provide services finely tuned to your digital aesthetic and user experience requirements. My expertise spans the art of crafting visually captivating and intuitive web interfaces. Whether it's designing stunning user interfaces, creating responsive layouts, or ensuring an engaging user journey, I am committed to delivering tailored solutions that amplify your online presence and brand identity. Let's transform your vision into a visually striking and user-friendly web reality that captivates your audience
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary"><a href="#b" class="text-white"> Check Price </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="mob-des.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mobile App Developmentn</h4>
+                            <p class="card-text">
+With a solid background in Android app development, I specialize in crafting innovative and functional mobile solutions. My expertise covers the entire app development lifecycle, from concept to deployment, ensuring that your Android application not only meets but exceeds your expectations. Whether it's designing a user-friendly interface, implementing robust functionality, or optimizing performance, I am dedicated to delivering tailor-made apps that resonate with your target audience. Let's turn your app idea into a reality that stands out on the Google Play Store, delivering a seamless and engaging mobile experience to users.
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary"><a href="#b" class="text-white"> Check Price </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-md-10 mt-5 mb-5">
+            <div class="row pl-5 pr-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="ui-des.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">UI/UX Design</h4>
+                            <p class="card-text">Steeped in the art of UI/UX design, I offer services tailored to enhance the digital experiences of your users. My expertise encompasses the design of user interfaces and experiences that are not only visually engaging but also highly intuitive and user-friendly. Whether it's creating sleek and user-centric designs, optimizing user flows, or conducting usability testing, I am dedicated to delivering customized solutions that elevate your digital presence and user satisfaction. Let's transform your digital products into captivating and seamless experiences that leave a lasting impact on your audience.
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary"><a href="#b" class="text-white"> Check Price </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="windows-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Windows App Design</h4>
+                            <p class="card-text">With a strong foundation in Windows app design, I specialize in crafting innovative and user-friendly solutions for the Windows platform. My expertise spans the entire app design process, from conceptualization to creating visually appealing and functional user interfaces. Whether it's designing a sleek and intuitive app interface, ensuring seamless user experiences, or optimizing the app for Windows devices, I am committed to delivering customized solutions that resonate with your target audience. Let's turn your Windows app vision into a reality that stands out on the platform, providing a delightful and efficient user experience for your users.
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary"><a href="#b" class="text-white"> Check Price </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center ">
+                        <div class="card-image">
+                            <div class="image">
+                                <img src="graphic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Graphic Design</h4>
+                            <p class="card-text">Steeped in the world of graphics design, I bring a wealth of creativity and expertise to the table. My skills encompass a broad spectrum of visual design, from crafting eye-catching logos and illustrations to creating stunning layouts and graphics for various mediums. Whether it's producing striking visuals for print, web, or digital media, I am dedicated to delivering tailor-made designs that capture your brand essence and communicate your message effectively. Let's transform your ideas into captivating visuals that leave a memorable and impactful impression on your audience
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary"><a href="#b" class="text-white"> Check Price </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="heading text-center mt-5">
+            <h6 class="pt-5 pb-0" id="price">Pricing</h6>
+            <h1 class="pt-0">Choose Your Plan</h1>
+        </div>
+        <div class="container" id="horizontal-row">
+            <hr style="border-top: 2px solid #e4dede;">
+        </div>
+
+        <div class="container col-md-10 mt-5 mb-5">
+            <div class="row pl-5 pr-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center flip" id="flip-1">
+                        <div class="card-price">
+                            <h1 class="price"> <span class="dol"> $</span>70</h1>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-style: 35px;">Basic</h4>
+                            <p class="card-text">
+                                <span class="tick">&#10003;</span> 3 pages <br>
+                                <span class="tick">&#10003;</span> Content Upload <br>
+                                <span class="tick">&#10003;</span> Responsive Design <br>
+                                <span class="tick text-danger">&#10540;</span> Include Source Code <br>
+                                <span class="tick text-danger">&#10540;</span> Plugins/Extensions <br>
+                                <span class="tick text-danger">&#10540;</span> Web Hosting <br>
+                                <span class="tick text-danger">&#10540;</span> Back-end <br>
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary" id="b">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center flip" id="flip-2">
+                        <div class="card-price">
+                            <h1 class="price"> <span class="dol"> $</span>120</h1>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-style: 35px;">Standard</h4>
+                            <p class="card-text">
+                                <span class="tick">&#10003;</span> 5 pages <br>
+                                <span class="tick">&#10003;</span> Content Upload <br>
+                                <span class="tick">&#10003;</span> Responsive Design <br>
+                                <span class="tick">&#10003;</span> Include Source Code <br>
+                                <span class="tick">&#10003;</span> Plugins/Extensions <br>
+                                <span class="tick text-danger">&#10540;</span> Web Hosting <br>
+                                <span class="tick text-danger">&#10540;</span> Back-end <br>
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-center flip" id="flip-3">
+                        <div class="card-price">
+                            <h1 class="price"> <span class="dol"> $</span>170</h1>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title" style="font-style: 35px;">Premium</h4>
+                            <p class="card-text">
+                                <span class="tick">&#10003;</span> 7 pages <br>
+                                <span class="tick">&#10003;</span> Content Upload <br>
+                                <span class="tick">&#10003;</span> Responsive Design <br>
+                                <span class="tick">&#10003;</span> Include Source Code <br>
+                                <span class="tick">&#10003;</span> Plugins/Extensions <br>
+                                <span class="tick">&#10003;</span> Web Hosting <br>
+                                <span class="tick">&#10003;</span> Back-end <br>
+                            </p>
+                        </div>
+                        <div class="card-btn mb-3">
+                            <button class="btn btn-secondary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="footer.js"></script>
+
+    <script src="flip.js"></script>
+
+    <script src="active_page.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
